@@ -66,6 +66,7 @@ Route::middleware('auth')->group(function () {
     // Ruta GET alternativa para cerrar sesión (para enlaces directos)
     Route::get('/cerrar-sesion', [ControladorAutenticacion::class, 'cerrarSesion'])
          ->name('cerrar.sesion.get');
+     
 });
 
 // Rutas adicionales para manejo de errores de autenticación
